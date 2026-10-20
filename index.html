@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Domenico Zaccone (Dom Zaccone) | Official Developer Portfolio</title>
-  <meta name="description" content="Official personal site and project repository for Dom Zaccone (Domenico Zaccone).">
   
-  <!-- Client-Side Host Differentiation Script (Breaks Canonicalization Across Mirrors) -->
+  <!-- Inline Host Differentiation Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    (function() {
       const host = window.location.hostname;
-      const titleTag = document.querySelector("title");
-      const mainHeading = document.querySelector("h1");
-      const mainDesc = document.querySelector("#node-description");
+      let pageTitle = "Domenico Zaccone (Dom Zaccone) | Official Developer Portfolio";
+      let headingText = "Domenico (Dom) Zaccone";
+      let descText = "Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.";
 
       if (host.includes("vercel.app")) {
-        document.title = "Domenico Zaccone | Software Developer Portfolio & Projects";
-        if (mainHeading) mainHeading.textContent = "Domenico Zaccone — Vercel Node";
-        if (mainDesc) mainDesc.textContent = "Official Vercel deployment node for Domenico Zaccone (Dom Zaccone). Showcasing web applications, software engineering projects, and code repositories.";
-      } 
-      else if (host.includes("netlify.app")) {
-        document.title = "Domenico Zaccone — Web & Game Development Hub";
-        if (mainHeading) mainHeading.textContent = "Domenico Zaccone — Netlify Node";
-        if (mainDesc) mainDesc.textContent = "Official Netlify mirror node for Domenico Zaccone (Dom Zaccone). Software projects, interactive applications, and development archives.";
-      } 
-      else if (host.includes("workers.dev")) {
-        document.title = "Domenico Zaccone | Technical Documentation & Code";
-        if (mainHeading) mainHeading.textContent = "Domenico Zaccone — Cloudflare Node";
-        if (mainDesc) mainDesc.textContent = "Official Cloudflare edge node for Domenico Zaccone (Dom Zaccone). Technical documentation, API endpoints, and repository links.";
+        pageTitle = "Domenico Zaccone | Software Developer Portfolio & Projects";
+        headingText = "Domenico Zaccone — Vercel Node";
+        descText = "Official Vercel deployment node for Domenico Zaccone (Dom Zaccone). Showcasing web applications, software engineering projects, and code repositories.";
+      } else if (host.includes("netlify.app")) {
+        pageTitle = "Domenico Zaccone — Web & Game Development Hub";
+        headingText = "Domenico Zaccone — Netlify Node";
+        descText = "Official Netlify mirror node for Domenico Zaccone (Dom Zaccone). Software projects, interactive applications, and development archives.";
+      } else if (host.includes("workers.dev")) {
+        pageTitle = "Domenico Zaccone | Technical Documentation & Code";
+        headingText = "Domenico Zaccone — Cloudflare Node";
+        descText = "Official Cloudflare edge node for Domenico Zaccone (Dom Zaccone). Technical documentation, API endpoints, and repository links.";
       }
-    });
+
+      document.title = pageTitle;
+      window.__nodeHeading = headingText;
+      window.__nodeDesc = descText;
+    })();
   </script>
 
+  <meta name="description" content="Official personal site and project repository for Dom Zaccone (Domenico Zaccone).">
+  
   <!-- Open Graph / Social Image Embeds -->
   <meta property="og:title" content="Domenico Zaccone (Dom Zaccone) | Official Developer Portfolio">
   <meta property="og:description" content="Official profile and portfolio for Dom Zaccone (Domenico Zaccone).">
@@ -144,4 +146,47 @@
   </script>
   
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height:
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; }
+    .gallery img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #666; }
+    footer a { color: #0066cc; text-decoration: none; margin-right: 8px; }
+    footer a:hover { text-decoration: underline; }
+    .node-group { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">Domenico (Dom) Zaccone</h1>
+  <p id="node-description">Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.</p>
+
+  <script>
+    if (window.__nodeHeading) document.getElementById("main-heading").textContent = window.__nodeHeading;
+    if (window.__nodeDesc) document.getElementById("node-description").textContent = window.__nodeDesc;
+  </script>
+
+  <h2>Profile Asset Gallery</h2>
+  <div class="gallery">
+    <img src="dom-zaccone-profile-1.jpeg" alt="Dom Zaccone - Domenico Zaccone official photo 1" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-2.webp" alt="Dom Zaccone - Domenico Zaccone official photo 2" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-3.png" alt="Dom Zaccone - Domenico Zaccone official photo 3" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-4.PNG" alt="Dom Zaccone - Domenico Zaccone official photo 4" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-5.png" alt="Dom Zaccone - Domenico Zaccone official photo 5" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-6.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 6" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-7.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 7" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-8.png" alt="Dom Zaccone - Domenico Zaccone official photo 8" title="Domenico Zaccone">
+    <img src="dom-zaccone-profile-9.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 9" title="Domenico Zaccone">
+  </div>
+
+  <footer>
+    <div class="node-group">
+      <strong>Core Verified Nodes:</strong> 
+      <a href="https://domenicozaccone.github.io" rel="me">GitHub</a> | 
+      <a href="https://domenicozacconegithubio.vercel.app" rel="me">Vercel</a> | 
+      <a href="https://domenicozaccone.netlify.app" rel="me">Netlify</a> | 
+      <a href="https://domenicozaccone-github-io.dom-zaccone-ct.workers.dev" rel="me">Cloudflare</a>
+    </div>
+    <div class="node-group">
+      <strong>Network & Profiles:</strong> 
+      <a href="https://domenico-zaccone.surge.sh" rel="me">Surge</a> | 
+      <a href="
