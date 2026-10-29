@@ -147,19 +147,137 @@
   </script>
   
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; }
-    .gallery img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
-    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #666; }
-    footer a { color: #0066cc; text-decoration: none; margin-right: 8px; }
-    footer a:hover { text-decoration: underline; }
-    .node-group { margin-bottom: 10px; }
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-primary: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --accent-color: #58a6ff;
+      --accent-hover: #1f6feb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      max-width: 900px; 
+      margin: 40px auto; 
+      padding: 0 20px; 
+      line-height: 1.6; 
+      background-color: var(--bg-color);
+      color: var(--text-primary); 
+    }
+
+    .hero-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    h1 { 
+      color: var(--text-heading);
+      font-size: 2.2rem; 
+      margin-bottom: 8px; 
+      letter-spacing: -0.5px;
+    }
+
+    p.subtitle { 
+      color: var(--accent-color); 
+      font-size: 1.05rem; 
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    p.desc {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      color: var(--text-heading);
+      font-size: 1.3rem;
+      margin: 30px 0 16px 0;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+
+    .gallery { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+      gap: 20px; 
+      margin-top: 20px; 
+    }
+
+    .gallery-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-color);
+    }
+
+    .gallery img { 
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; 
+      display: block;
+    }
+
+    .gallery-caption {
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      background: rgba(0,0,0,0.1);
+      border-top: 1px solid var(--border-color);
+    }
+
+    footer { 
+      margin-top: 50px; 
+      padding-top: 25px; 
+      border-top: 1px solid var(--border-color); 
+      font-size: 0.88rem; 
+      color: #8b949e;
+      text-align: center;
+    }
+
+    .node-group { 
+      margin-bottom: 12px; 
+    }
+
+    footer strong {
+      color: var(--text-heading);
+    }
+
+    footer a { 
+      color: var(--accent-color); 
+      text-decoration: none; 
+      margin: 0 6px; 
+      transition: color 0.2s;
+    }
+
+    footer a:hover { 
+      color: #79c0ff;
+      text-decoration: underline; 
+    }
   </style>
 </head>
 <body>
-  <h1 id="main-heading">Dom (Domenico) Zaccone</h1>
-  <p id="node-description">Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.</p>
+
+  <div class="hero-card">
+    <h1 id="main-heading">Dom (Domenico) Zaccone</h1>
+    <p class="subtitle">Official Developer Portfolio & Node</p>
+    <p id="node-description" class="desc">Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.</p>
+  </div>
 
   <script>
     if (window.__nodeHeading) document.getElementById("main-heading").textContent = window.__nodeHeading;
@@ -168,15 +286,42 @@
 
   <h2>Profile Asset Gallery</h2>
   <div class="gallery">
-    <img src="dom-zaccone-profile-1.jpeg" alt="Dom Zaccone - Domenico Zaccone official photo 1" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-2.webp" alt="Dom Zaccone - Domenico Zaccone official photo 2" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-3.png" alt="Dom Zaccone - Domenico Zaccone official photo 3" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-4.PNG" alt="Dom Zaccone - Domenico Zaccone official photo 4" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-5.png" alt="Dom Zaccone - Domenico Zaccone official photo 5" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-6.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 6" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-7.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 7" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-8.png" alt="Dom Zaccone - Domenico Zaccone official photo 8" title="Dom Zaccone">
-    <img src="dom-zaccone-profile-9.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 9" title="Dom Zaccone">
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-1.jpeg" alt="Dom Zaccone - Domenico Zaccone official photo 1" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 01 — Primary Node</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-2.webp" alt="Dom Zaccone - Domenico Zaccone official photo 2" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 02 — Project View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-3.png" alt="Dom Zaccone - Domenico Zaccone official photo 3" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 03 — Technical Asset</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-4.PNG" alt="Dom Zaccone - Domenico Zaccone official photo 4" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 04 — Rendering Node</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-5.png" alt="Dom Zaccone - Domenico Zaccone official photo 5" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 05 — Workspace View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-6.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 6" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 06 — Documentation</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-7.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 7" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 07 — System Render</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-8.png" alt="Dom Zaccone - Domenico Zaccone official photo 8" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 08 — Core Identity</div>
+    </div>
+    <div class="gallery-item">
+      <img src="dom-zaccone-profile-9.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 9" title="Dom Zaccone">
+      <div class="gallery-caption">Asset 09 — Archive Node</div>
+    </div>
   </div>
 
   <footer>
