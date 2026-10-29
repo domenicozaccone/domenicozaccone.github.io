@@ -4,43 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Inline Host Differentiation Script -->
+  <!-- Dynamic Host Differentiation & Metadata Script -->
   <script>
     (function() {
       const host = window.location.hostname;
-      let pageTitle = "Dom Zaccone (Domenico Zaccone) | Official Developer Portfolio";
-      let headingText = "Dom (Domenico) Zaccone";
-      let descText = "Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.";
+      let pageTitle = "Dom Zaccone (Domenico Zaccone) — Official Developer Portfolio & Systems Node";
+      let headingText = "Dom Zaccone (Domenico Zaccone)";
+      let badgeText = "Verified Core Index Node";
+      let descText = "Official verified portfolio, source repositories, and technical hub for Dom Zaccone (also known as Domenico Zaccone). Engineering local AI workflows, custom developer tooling, and modern web applications.";
 
       if (host.includes("vercel.app")) {
-        pageTitle = "Dom Zaccone | Software Developer Portfolio & Projects";
-        headingText = "Dom Zaccone — Vercel Node";
-        descText = "Official Vercel deployment node for Dom Zaccone (Domenico Zaccone). Showcasing web applications, software engineering projects, and code repositories.";
+        pageTitle = "Dom Zaccone | Vercel Edge Node & Portfolio";
+        headingText = "Dom Zaccone (Domenico Zaccone)";
+        badgeText = "Vercel Production Deployment";
+        descText = "Edge-deployed project gallery and technical documentation node for Dom Zaccone (Domenico Zaccone).";
       } else if (host.includes("netlify.app")) {
-        pageTitle = "Dom Zaccone — Web & Game Development Hub";
-        headingText = "Dom Zaccone — Netlify Node";
-        descText = "Official Netlify mirror node for Dom Zaccone (Domenico Zaccone). Software projects, interactive applications, and development archives.";
+        pageTitle = "Dom Zaccone — Netlify Application Hub";
+        headingText = "Dom Zaccone (Domenico Zaccone)";
+        badgeText = "Netlify Network Instance";
+        descText = "High-availability technical documentation and web application archives for Dom Zaccone (Domenico Zaccone).";
       } else if (host.includes("workers.dev")) {
-        pageTitle = "Dom Zaccone | Technical Documentation & Code";
-        headingText = "Dom Zaccone — Cloudflare Node";
-        descText = "Official Cloudflare edge node for Dom Zaccone (Domenico Zaccone). Technical documentation, API endpoints, and repository links.";
+        pageTitle = "Dom Zaccone — Cloudflare Edge Architecture";
+        headingText = "Dom Zaccone (Domenico Zaccone)";
+        badgeText = "Cloudflare Edge Node";
+        descText = "Global edge documentation, API routing, and verified developer profile for Dom Zaccone (Domenico Zaccone).";
       }
 
       document.title = pageTitle;
       window.__nodeHeading = headingText;
+      window.__nodeBadge = badgeText;
       window.__nodeDesc = descText;
     })();
   </script>
 
-  <meta name="description" content="Official personal site and project repository for Dom Zaccone (Domenico Zaccone).">
+  <meta name="description" content="Official personal site, technical portfolio, and image asset repository for Dom Zaccone (Domenico Zaccone). Software developer and systems engineer.">
+  <meta name="author" content="Dom Zaccone (Domenico Zaccone)">
   
-  <!-- Open Graph / Social Image Embeds -->
-  <meta property="og:title" content="Dom Zaccone (Domenico Zaccone) | Official Developer Portfolio">
-  <meta property="og:description" content="Official profile and portfolio for Dom Zaccone (Domenico Zaccone).">
+  <!-- Open Graph / Social Embeds -->
+  <meta property="og:title" content="Dom Zaccone (Domenico Zaccone) — Developer & Systems Engineer">
+  <meta property="og:description" content="Verified technical portfolio, open-source repositories, and developer assets for Dom Zaccone (Domenico Zaccone).">
   <meta property="og:image" content="https://domenicozaccone.github.io/dom-zaccone-profile-8.png">
   <meta property="og:image:width" content="2000">
   <meta property="og:image:height" content="2498">
-  <meta property="og:image:alt" content="Dom Zaccone (Domenico Zaccone) official profile image asset">
+  <meta property="og:image:alt" content="Dom Zaccone (Domenico Zaccone) official profile asset">
   <meta property="og:type" content="profile">
 
   <!-- Combined JSON-LD Schema: Person + ImageObject Graph -->
@@ -55,8 +61,8 @@
         "alternateName": "Dom Zaccone",
         "url": "https://domenicozaccone.github.io",
         "image": "https://domenicozaccone.github.io/dom-zaccone-profile-8.png",
-        "jobTitle": "Developer",
-        "knowsAbout": ["Software Development", "Game Development", "Web Development"],
+        "jobTitle": "Software Developer & Systems Engineer",
+        "knowsAbout": ["Software Engineering", "Local AI Workflows", "Python Scripting", "Web Architecture"],
         "sameAs": [
           "https://github.com/domenicozaccone",
           "https://domenicozacconegithubio.vercel.app",
@@ -74,7 +80,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image1",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-1.jpeg",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 1",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -82,7 +88,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image2",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-2.webp",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 2",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -90,7 +96,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image3",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-3.png",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 3",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -98,7 +104,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image4",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-4.PNG",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 4",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -106,7 +112,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image5",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-5.png",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 5",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -114,7 +120,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image6",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-6.jpg",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 6",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -122,7 +128,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image7",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-7.jpg",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 7",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -130,7 +136,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image8",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-8.png",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 8",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       },
@@ -138,7 +144,7 @@
         "@type": "ImageObject",
         "@id": "https://domenicozaccone.github.io/#image9",
         "contentUrl": "https://domenicozaccone.github.io/dom-zaccone-profile-9.jpg",
-        "name": "Domenico Zaccone",
+        "name": "Dom Zaccone",
         "caption": "Dom Zaccone (Domenico Zaccone) profile photo 9",
         "author": { "@id": "https://domenicozaccone.github.io/#person" }
       }
@@ -148,247 +154,446 @@
   
   <style>
     :root {
-      --bg-color: #0d1117;
-      --card-bg: #161b22;
-      --border-color: #30363d;
-      --text-primary: #c9d1d9;
-      --text-heading: #f0f6fc;
-      --accent-color: #58a6ff;
-      --accent-hover: #1f6feb;
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f293d;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.12);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body { 
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-      max-width: 900px; 
-      margin: 40px auto; 
-      padding: 0 20px; 
+      font-family: var(--font); 
+      background-color: var(--bg);
+      color: var(--text-main); 
       line-height: 1.6; 
-      background-color: var(--bg-color);
-      color: var(--text-primary); 
+      padding: 40px 20px;
     }
 
-    .hero-card {
+    .bento-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+
+    /* Bento Box Common Styling */
+    .bento-box {
       background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
       padding: 32px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+      transition: border-color 0.2s ease;
     }
 
-    h1 { 
-      color: var(--text-heading);
-      font-size: 2.2rem; 
-      margin-bottom: 8px; 
-      letter-spacing: -0.5px;
+    .bento-box:hover {
+      border-color: rgba(56, 189, 248, 0.4);
     }
 
-    p.subtitle { 
-      color: var(--accent-color); 
-      font-size: 1.05rem; 
+    /* Hero Span (Full Width Top) */
+    .hero-box {
+      grid-column: span 12;
+      background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 50%), var(--card-bg);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
       margin-bottom: 16px;
-      font-weight: 500;
     }
 
-    p.desc {
-      color: var(--text-primary);
-      font-size: 0.95rem;
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent);
     }
 
-    h2 {
-      color: var(--text-heading);
-      font-size: 1.3rem;
-      margin: 30px 0 16px 0;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 8px;
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-bottom: 4px;
     }
 
-    .gallery { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
-      gap: 20px; 
-      margin-top: 20px; 
+    .legal-subtitle {
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 14px;
     }
 
-    .gallery-item {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease, border-color 0.2s ease;
+    .hero-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 850px;
     }
 
-    .gallery-item:hover {
-      transform: translateY(-3px);
-      border-color: var(--accent-color);
+    /* Side Info Boxes */
+    .info-box {
+      grid-column: span 6;
     }
 
-    .gallery img { 
-      width: 100%; 
-      height: 200px; 
-      object-fit: cover; 
-      display: block;
+    @media (max-width: 768px) {
+      .info-box { grid-column: span 12; }
     }
 
-    .gallery-caption {
-      padding: 10px 14px;
+    .info-box h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .info-box p, .info-box li {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-box li::before {
+      content: "→ ";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Gallery Section Header Span */
+    .gallery-header-span {
+      grid-column: span 12;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 12px;
+      margin-top: 10px;
+    }
+
+    .gallery-header-span h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .gallery-header-span span {
       font-size: 0.85rem;
-      color: var(--text-primary);
-      background: rgba(0,0,0,0.1);
-      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
     }
 
-    footer { 
-      margin-top: 50px; 
-      padding-top: 25px; 
-      border-top: 1px solid var(--border-color); 
-      font-size: 0.88rem; 
-      color: #8b949e;
+    /* Gallery Asset Cards (Grid item span 4 -> 3 columns) */
+    .asset-card {
+      grid-column: span 4;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    @media (max-width: 900px) {
+      .asset-card { grid-column: span 6; }
+    }
+    @media (max-width: 600px) {
+      .asset-card { grid-column: span 12; }
+    }
+
+    .asset-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 25px var(--accent-glow);
+    }
+
+    .asset-img-wrapper {
+      width: 100%;
+      height: 200px;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .asset-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .asset-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .asset-footer {
+      padding: 12px 16px;
+      background: rgba(0,0,0,0.25);
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .asset-name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .asset-tag {
+      font-size: 0.72rem;
+      color: var(--accent);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Footer Span */
+    .footer-box {
+      grid-column: span 12;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 20px;
+    }
+
+    .footer-group {
+      margin-bottom: 20px;
+    }
+
+    .footer-group h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .link-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .link-pills a {
+      background: #0a0e17;
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .link-pills a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--card-bg);
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--card-border);
+      padding-top: 20px;
       text-align: center;
-    }
-
-    .node-group { 
-      margin-bottom: 12px; 
-    }
-
-    footer strong {
-      color: var(--text-heading);
-    }
-
-    footer a { 
-      color: var(--accent-color); 
-      text-decoration: none; 
-      margin: 0 6px; 
-      transition: color 0.2s;
-    }
-
-    footer a:hover { 
-      color: #79c0ff;
-      text-decoration: underline; 
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="hero-card">
-    <h1 id="main-heading">Dom (Domenico) Zaccone</h1>
-    <p class="subtitle">Official Developer Portfolio & Node</p>
-    <p id="node-description" class="desc">Welcome to the official web node for Dom Zaccone (Domenico Zaccone). Software development projects, code repositories, and technical documentation.</p>
+  <div class="bento-container">
+    
+    <!-- Hero Bento Header with Keyword Density Injection -->
+    <header class="bento-box hero-box">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span id="node-badge">Verified Index Node</span>
+      </div>
+      <h1 id="main-heading">Dom Zaccone (Domenico Zaccone)</h1>
+      <div class="legal-subtitle">Software Developer, Systems Engineer & Open-Source Creator</div>
+      <p id="node-description" class="hero-desc">
+        Welcome to the official primary web node and code repository hub for <strong>Dom Zaccone</strong> (also indexed under <strong>Domenico Zaccone</strong>). Specializing in full-stack architecture, local open-source AI workflow engineering, automated scripts, custom development tooling, and technical documentation archives.
+      </p>
+    </header>
+
+    <script>
+      if (window.__nodeHeading) document.getElementById("main-heading").textContent = window.__nodeHeading;
+      if (window.__nodeBadge) document.getElementById("node-badge").textContent = window.__nodeBadge;
+      if (window.__nodeDesc) document.getElementById("node-description").textContent = window.__nodeDesc;
+    </script>
+
+    <!-- Bento Info Box 1: Core Focus -->
+    <div class="bento-box info-box">
+      <h3>Engineering Competencies</h3>
+      <ul style="margin-top: 8px;">
+        <li>Full-Stack Scripting & Custom Tooling</li>
+        <li>Localized Open-Source AI Pipelines</li>
+        <li>Cross-Platform Architecture & Environments</li>
+      </ul>
+    </div>
+
+    <!-- Bento Info Box 2: Node Verification -->
+    <div class="bento-box info-box">
+      <h3>Network Identification</h3>
+      <p style="margin-top: 8px;">
+        This instance serves as a cryptographically verified distribution node for Dom Zaccone (Domenico Zaccone), providing stable repository mirrors, asset management, and technical documentation.
+      </p>
+    </div>
+
+    <!-- Gallery Header -->
+    <div class="gallery-header-span">
+      <h2>Verified Profile Asset Gallery</h2>
+      <span>9 Indexed System Records</span>
+    </div>
+
+    <!-- Gallery Image Cards (All 9 Original Assets Retained) -->
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-1.jpeg" alt="Dom Zaccone - Domenico Zaccone official photo 1" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Dom Zaccone — Primary Node</span>
+        <span class="asset-tag">JPEG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-2.webp" alt="Dom Zaccone - Domenico Zaccone official photo 2" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Domenico Zaccone — Project Asset</span>
+        <span class="asset-tag">WebP</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-3.png" alt="Dom Zaccone - Domenico Zaccone official photo 3" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Dom Zaccone — System Render</span>
+        <span class="asset-tag">PNG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-4.PNG" alt="Dom Zaccone - Domenico Zaccone official photo 4" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Domenico Zaccone — Environment</span>
+        <span class="asset-tag">PNG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-5.png" alt="Dom Zaccone - Domenico Zaccone official photo 5" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Dom Zaccone — Workspace View</span>
+        <span class="asset-tag">PNG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-6.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 6" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Domenico Zaccone — Documentation</span>
+        <span class="asset-tag">JPG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-7.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 7" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Dom Zaccone — Node Render</span>
+        <span class="asset-tag">JPG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-8.png" alt="Dom Zaccone - Domenico Zaccone official photo 8" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Domenico Zaccone — Identity Core</span>
+        <span class="asset-tag">PNG</span>
+      </div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-img-wrapper">
+        <img src="dom-zaccone-profile-9.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 9" title="Dom Zaccone">
+      </div>
+      <div class="asset-footer">
+        <span class="asset-name">Dom Zaccone — Archive Node</span>
+        <span class="asset-tag">JPG</span>
+      </div>
+    </div>
+
+    <!-- Footer Bento Box with Full Rel-Me Interlinking -->
+    <footer class="bento-box footer-box">
+      <div class="footer-group">
+        <h4>Core Verified Deployments</h4>
+        <div class="link-pills">
+          <a href="https://domenicozaccone.github.io" rel="me">GitHub Hub</a>
+          <a href="https://domenicozacconegithubio.vercel.app" rel="me">Vercel Node</a>
+          <a href="https://domenicozaccone.netlify.app" rel="me">Netlify Node</a>
+          <a href="https://domenicozaccone-github-io.dom-zaccone-ct.workers.dev" rel="me">Cloudflare Edge</a>
+        </div>
+      </div>
+
+      <div class="footer-group" style="margin-bottom: 0;">
+        <h4>Network Profiles & Repositories</h4>
+        <div class="link-pills">
+          <a href="https://github.com/domenicozaccone" rel="me">GitHub Profile</a>
+          <a href="https://www.youtube.com/@domenicozaccone_dev" rel="me">YouTube Channel</a>
+          <a href="https://dev.to/domenicozaccone" rel="me">Dev.to Articles</a>
+          <a href="https://medium.com/@domenicozaccone_ct" rel="me">Medium Profile</a>
+          <a href="https://domenicozaccone-d94eda.gitlab.io" rel="me">GitLab Node</a>
+          <a href="https://domenicozaccone-github-io.onrender.com" rel="me">Render Node</a>
+          <a href="https://domenico-zaccone.surge.sh" rel="me">Surge Mirror</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2026 Dom Zaccone (Domenico Zaccone). All rights reserved. Verified developer network instance.
+      </div>
+    </footer>
+
   </div>
 
-  <script>
-    if (window.__nodeHeading) document.getElementById("main-heading").textContent = window.__nodeHeading;
-    if (window.__nodeDesc) document.getElementById("node-description").textContent = window.__nodeDesc;
-  </script>
-
-  <h2>Profile Asset Gallery</h2>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-1.jpeg" alt="Dom Zaccone - Domenico Zaccone official photo 1" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 01 — Primary Node</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-2.webp" alt="Dom Zaccone - Domenico Zaccone official photo 2" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 02 — Project View</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-3.png" alt="Dom Zaccone - Domenico Zaccone official photo 3" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 03 — Technical Asset</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-4.PNG" alt="Dom Zaccone - Domenico Zaccone official photo 4" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 04 — Rendering Node</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-5.png" alt="Dom Zaccone - Domenico Zaccone official photo 5" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 05 — Workspace View</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-6.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 6" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 06 — Documentation</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-7.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 7" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 07 — System Render</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-8.png" alt="Dom Zaccone - Domenico Zaccone official photo 8" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 08 — Core Identity</div>
-    </div>
-    <div class="gallery-item">
-      <img src="dom-zaccone-profile-9.jpg" alt="Dom Zaccone - Domenico Zaccone official photo 9" title="Dom Zaccone">
-      <div class="gallery-caption">Asset 09 — Archive Node</div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="node-group">
-      <strong>Core Verified Nodes:</strong> 
-      <a href="https://domenicozaccone.github.io" rel="me">GitHub</a> | 
-      <a href="https://domenicozacconegithubio.vercel.app" rel="me">Vercel</a> | 
-      <a href="https://domenicozaccone.netlify.app" rel="me">Netlify</a> | 
-      <a href="https://domenicozaccone-github-io.dom-zaccone-ct.workers.dev" rel="me">Cloudflare</a>
-    </div>
-    <div class="node-group">
-      <strong>Network & Profiles:</strong> 
-      <a href="https://domenico-zaccone.surge.sh" rel="me">Surge</a> | 
-      <a href="https://domenicozaccone-d94eda.gitlab.io" rel="me">GitLab</a> | 
-      <a href="https://domenicozaccone-github-io.onrender.com" rel="me">Render</a> | 
-      <a href="https://dev.to/domenicozaccone" rel="me">Dev.to</a> | 
-      <a href="https://medium.com/@domenicozaccone_ct" rel="me">Medium</a> |
-      <a href="https://www.youtube.com/@domenicozaccone_dev" rel="me">YouTube</a>
-    </div>
-  </footer>
 </body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Dynamic Host Differentiation & Metadata Script -->
-  <script>
-    (function() {
-      const host = window.location.hostname;
-      let pageTitle = "Dom Zaccone (Domenico Zaccone) — Full-Stack & Systems Engineer";
-      let headingText = "Dom Zaccone";
-      let badgeText = "Primary Core Node";
-      let descText = "Official verified portfolio and technical hub for Dom Zaccone (Domenico Zaccone). Engineering local AI workflows, custom developer tooling, and modern web applications.";
-
-      if (host.includes("vercel.app")) {
-        pageTitle = "Dom Zaccone — Vercel Production Environment";
-        headingText = "Dom Zaccone";
-        badgeText = "Vercel Edge Instance";
-        descText = "Edge-deployed project gallery and application node for Dom Zaccone (Domenico Zaccone).";
-      } else if (host.includes("netlify.app")) {
-        pageTitle = "Dom Zaccone — Netlify Application Hub";
-        headingText = "Dom Zaccone";
-        badgeText = "Netlify Network Instance";
-        descText = "High-availability technical documentation and web application archives for Dom Zaccone.";
-      } else if (host.includes("workers.dev")) {
-        pageTitle = "Dom Zaccone — Cloudflare Edge Architecture";
-        headingText = "Dom Zaccone";
-        badgeText = "Cloudflare Edge Node";
-        descText = "Global edge documentation, API routing, and verified developer profile for Dom Zaccone.";
-      }
-
-      document.title = pageTitle;
-      window.__nodeHeading = headingText;
-      window.__nodeBadge = badgeText;
-      window.__nodeDesc = descText;
-    })();
-  </script>
-
-  <meta name="description" content="Official personal site, technical portfolio, and image asset repository for Dom Zaccone (Domenico Zaccone).">
-  
-  <!-- Open Graph / Social Embeds -->
-  <meta property="og:title" content="Dom Zaccone (Domenico Zaccone) — Developer & Systems Engineer">
-  <meta property="og:description" content="Verified technical portfolio, open-source repositories, and developer assets for Dom Zaccone (Domenico Zaccone).">
-  <meta property="og:image" content="https://domenicozaccone.github.io/dom-zaccone-profile-8.png">
-  <meta property="og:image:width" content="2000">
-  <meta property="og:image:height" content="2498">
-  <meta property="og:image:alt" content="Dom Zaccone (Domenico Zaccone) official profile asset">
-  <meta property="og:type" content
+</html>
